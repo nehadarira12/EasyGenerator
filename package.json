@@ -1,0 +1,42 @@
+{
+  "name": "easygenerator",
+  "version": "1.0.0",
+  "description": "Cypress testing project for Easygenerator",
+  "main": "index.js",
+  "scripts": {
+    "open": "cypress open",
+    "run": "cypress run",
+    "prettify": "prettier --write .",
+    "serve": "http-server C:/Users/neha_rayn/Desktop -p 8080",
+    "test": "cypress run",
+    "posttest": "npx mochawesome-merge cypress/reports/*.json > cypress/reports/merged-report.json && npx marge cypress/reports/merged-report.json -f report -o cypress/reports",
+    "clean:reports": "rm -rf cypress/reports/*"
+  },
+  "keywords": [
+    "cypress",
+    "testing",
+    "typescript"
+  ],
+  "author": "Neha Kumari",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "cypress": "^13.11.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-xpath": "^2.0.1",
+    "http-server": "^14.1.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "prettier": "^2.3.2",
+    "typescript": "^5.4.5"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
