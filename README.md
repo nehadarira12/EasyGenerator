@@ -1,10 +1,10 @@
-# README for EasyGenerator Testing Project
+# Cypress Website Testing Framework
 
 ---
 
 ## Project Overview
 
-This project includes automated tests for the EasyGenerator Practice Page. It leverages Cypress for end-to-end testing to ensure that all functionalities work as expected.
+This project includes automated tests for the Practice Page Website. It leverages Cypress for end-to-end testing to ensure that all functionalities work as expected.
 
 ## Features Tested
 
@@ -16,7 +16,7 @@ This project includes automated tests for the EasyGenerator Practice Page. It le
 
 ## Cypress Tests
 
-We have created several spec files to cover different aspects of the application. Below is a list of the spec files and their purposes:
+I have created several spec files to cover different aspects of the application. Below is a list of the spec files and their purposes:
 
 - **alertConfirmTests.spec.ts**: Tests alert and confirmation modals for correct text and user interaction.
 - **dropdownTests.spec.ts**: Verifies that dropdowns populate correctly and can be interacted with.
